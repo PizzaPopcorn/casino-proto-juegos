@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juego Individual</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/juegos.css" />
+</head>
+<body onload="getActiveUser(); updateTexts(); makeCardList()">
+    <div class="juegos-area_top">
+        <img class="juegos-btn_menu" src="img/Boton Menu.svg" alt="" onclick="goBack()" />
+        <img class="juegos-btn_profile" src="img/Amigo1.svg" alt="" onclick="toggle_menu()" />
+    </div>
+    <div class="juegos-area_center">
+        <img src="img/Premios_CuadroFondo.svg" alt="" />
+        <div class="juegos-panel_bg">
+            <img src="img/Premios/Rompecabezas Individual.png" alt="" />
+        </div>
+        <div class="juegos-panel_juego juegos-puzzle_Ind">
+            <img id="c1" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c2" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c3" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c4" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c5" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c6" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c7" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c8" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c9" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+        </div>
+        <div class="juegos-panel_text">
+            <h4><span id="pUnlocked"></span>/9</h4>
+        </div>
+    </div>
+    <div class="juegos-area_bottom">
+        <h1>Premios</h1>
+        <img src="img/Premios_CajaPremios.svg" alt="" />
+        <img src="img/Premios_CajaPremios.svg" alt="" />
+        <img src="img/Premios_CajaPremios.svg" alt="" />
+        <div class="juegos-image_premio juegos-ip_ind">
+            <img src="img/Premios/Premio Iphone8 Circulo.png" alt="" />
+            <img src="img/Premios/Premio MacbookPro Circulo.png" alt="" />
+            <img src="img/Premios/Premio Vegas Circulo.png" alt="" />
+        </div>
+        <h3 class="juegos-powered_ind">Powered by Hot Potato</h3>
+    </div>
+    <script src="js/hotpotato.js"></script>
+    <script src="js/juego_ind.js"></script>
+    <script src="js/juego.js"></script>
+</body>
+</html>

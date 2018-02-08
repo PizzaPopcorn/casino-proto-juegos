@@ -1,0 +1,193 @@
+@font-face {
+    font-family: casino-fonts-Monsterrat_Reg;
+    src: url(../fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: casino-fonts-Monsterrat_Thin;
+    src: url(../fonts/Montserrat-Thin.otf);
+}
+
+body {
+    background-color: rgb(51, 0, 86);
+    background-image: url(../img/Fondo_02.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.test {
+    border: 1px solid white;
+}
+
+/*Parte superior de la pantalla*/
+
+.juegos-area_top {
+    margin: auto;
+    width: 98%;
+    margin-top: 2%;
+}
+
+.juegos-btn_menu {
+    margin-top: 1%;
+    width: 15%;
+}
+
+.juegos-btn_profile {
+    width: 15%;
+    float: right;
+}
+
+/*Centro de la pantalla*/
+
+.juegos-area_center {
+    margin: auto;
+    width: 98%;
+    margin-top: 18%;
+}
+
+.juegos-area_center img{
+    margin: auto;
+    display: block;
+    width: 82%;
+    z-index: 20;
+}
+
+.juegos-panel_juego{
+    width: 68%;
+    position: absolute;
+    top: 18.8%;
+    left: 16%;
+    z-index: 30;
+}
+
+.juegos-puzzle_Ind img{
+    float: left;
+    width: 33.333%;
+}
+
+.juegos-puzzle_Grp img {
+    float: left;
+    width: 12.5%;
+}
+
+.juegos-panel_juego_unlocked{
+    visibility: hidden;
+}
+
+@keyframes anim_unlock{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.juegos-panel_juego_unlocking {
+    animation-name: anim_unlock;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.juegos-panel_bg {
+    width: 68%;
+    position: absolute;
+    top: 18.8%;
+    left: 16%;
+    z-index: 25;
+}
+
+.juegos-panel_bg img {
+    display: inline-grid;
+    width: 100%;
+}
+
+.juegos-panel_text {
+    width: 68%;
+    position: absolute;
+    top: 55.3%;
+    left: 16%;
+    z-index: 30;
+    
+}
+
+.juegos-panel_text h4 {
+    text-align: center;
+    color: white;
+    font-family: casino-fonts-Monsterrat_Thin;
+}
+
+/*Parte inferior de la pantalla*/
+
+.juegos-area_bottom {
+    margin: auto;
+    width: 98%;
+    margin-top: 2%;
+}
+
+.juegos-area_bottom img{
+    margin: auto;
+    margin-left: 3.6%;
+    display: inline-block;
+    width: 28%;
+    z-index: 20;
+}
+
+.juegos-area_bottom h1{
+    margin: 2%;
+    text-align: center;
+    color: white;
+    font-family: casino-fonts-Monsterrat_Thin;
+}
+
+.juegos-area_bottom h3{
+    text-align: center;
+    color: white;
+    font-family: casino-fonts-Monsterrat_Thin;
+}
+
+.juegos-powered_ind {
+    margin-top: 13%;
+    margin-bottom: 0px;
+}
+
+.juegos-powered_grp {
+    margin-top: 1%;
+    margin-bottom: 0px;
+}
+
+.juegos-group{
+    margin: auto;
+    width: 98%;
+    text-align: center;
+}
+
+.juegos-group img{
+    margin: auto 1% auto;
+    width: 10%;
+    display: inline-block;
+}
+
+.juegos-image_premio{
+    position: absolute;
+    width: 94%;
+    left: -1%;
+}
+
+.juegos-ip_ind{
+    top: 70.4%;
+}
+
+.juegos-ip_grp{
+    top: 77%;
+}
+
+.juegos-image_premio img{
+    margin: auto;
+    margin-left: 10.1%;
+    display: inline-block;
+    /*border-radius: 50%;*/
+    width: 22%;
+    z-index: 30;
+}

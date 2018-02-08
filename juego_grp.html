@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juego Grupal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/juegos.css" />
+</head>
+<body onload="getActiveUser(); updateTexts(); makeCardList()">
+    <div class="juegos-area_top">
+        <img class="juegos-btn_menu" src="img/Boton Menu.svg" alt="" onclick="goBack()" />
+        <img class="juegos-btn_profile" src="img/Amigo1.svg" alt="" onclick="toggle_menu()" />
+    </div>
+    <div class="juegos-area_center">
+        <img src="img/Premios_CuadroFondo.svg" alt="" />
+        <div class="juegos-panel_bg">
+            <img src="img/Premios/Rompecabezas Grupal.png" alt="" />
+        </div>
+        <div class="juegos-panel_juego juegos-puzzle_Grp">
+            <img id="c01" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c02" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c03" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c04" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c05" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c06" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c07" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c08" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c09" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c10" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c11" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c12" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c13" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c14" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c15" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c16" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c17" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c18" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c19" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c20" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c21" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c22" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c23" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c24" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c25" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c26" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c27" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c28" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c29" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c30" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c31" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c32" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c33" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c34" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c35" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c36" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c37" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c38" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c39" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c40" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c41" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c42" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c43" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c44" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c45" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c46" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c47" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c48" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c49" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c50" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c51" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c52" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c53" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c54" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c55" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c56" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c57" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c58" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c59" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c60" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c61" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c62" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c63" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+            <img id="c64" class="def" src="img/Premios_CuadroCh.svg" alt="" onclick="unlockCard(id)" />
+        </div>
+        <div class="juegos-panel_text">
+            <h4><span id="pUnlocked"></span>/64</h4>
+        </div>
+    </div>
+    <div class="juegos-area_bottom">
+        <div class="juegos-group">
+            <img src="img/Amigo2.svg" alt="" />
+            <img src="img/Amigo3.svg" alt="" />
+            <img src="img/Amigo5.svg" alt="" />
+            <img src="img/Btn_Invitar.svg" alt="" />
+        </div>
+        <h1>Premios</h1>
+        <img src="img/Premios_CajaPremios.svg" alt="" />
+        <img src="img/Premios_CajaPremios.svg" alt="" />
+        <img src="img/Premios_CajaPremios.svg" alt="" />
+        <div class="juegos-image_premio juegos-ip_grp">
+            <img src="img/Premios/Premio Iphone8 Circulo.png" alt="" />
+            <img src="img/Premios/Premio MacbookPro Circulo.png" alt="" />
+            <img src="img/Premios/Premio Vegas Circulo.png" alt="" />
+        </div>
+        <h3 class="juegos-powered_grp">Powered by Hot Potato</h3>
+    </div>
+    <script src="js/hotpotato.js"></script>
+    <script src="js/juego_grp.js"></script>
+    <script src="js/juego.js"></script>
+</body>
+</html>
